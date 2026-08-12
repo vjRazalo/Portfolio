@@ -1,61 +1,130 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Vincent's Personal Site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Vincent Janu Razalo, Technical Business Analyst, IT Project Manager and Information Systems Professional based in Perth, Western Australia.">
+  <title>Vincent Janu Razalo | Technical Business Analyst & IT Project Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <table cellspacing = "20";>
-    <tr>
-      <td>
-        <img src="images/Profile.jpg" alt="Vincent Janu Razalo's Profile Picture">
-      </td>
-      <td><h1>VINCENT JANU A. RAZALO</h1>
-      <p><em>Assistant Professor 1</em></p>
-      <p>A graduate of Bachelor of Science in Information Technology from Mindanao University of Science and Technology. Also, a graduate
-      of Masters in Information Technology from Xavier University - Ateneo de Cagayan.</p></td>
-    </tr>
-  </table>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home">VJR<span>.</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#achievements">Achievements</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <hr>
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Perth, Western Australia</p>
+          <h1>Turning business challenges into <span>practical technology solutions.</span></h1>
+          <p class="hero-intro">I'm <strong>Vincent Janu Razalo</strong> — a Technical Business Analyst, IT Project Manager and Information Systems Professional with experience across technology, project delivery, digital transformation and higher education.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#experience">Explore my experience</a>
+            <a class="button secondary" href="https://www.linkedin.com/in/vincentjanurazalo/" target="_blank" rel="noopener">View LinkedIn ↗</a>
+          </div>
+          <div class="hero-tags" aria-label="Areas of expertise">
+            <span>Business Analysis</span><span>Project Management</span><span>Digital Transformation</span><span>Power BI</span><span>SQL</span><span>Python</span>
+          </div>
+        </div>
+        <div class="profile-wrap">
+          <div class="profile-card">
+            <img src="images/Profile.jpg" alt="Portrait of Vincent Janu Razalo">
+          </div>
+          <div class="profile-note">
+            <strong>10+ years</strong>
+            <span>across IT, education, leadership and technology projects</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <h3>Subjects being taught</h3>
-  <ul>
-    <li>Capstone 1</li>
-    <li>Information Security</li>
-    <li>Integrated Application Software</li>
-  </ul>
+    <section id="about" class="section">
+      <div class="container two-column">
+        <div><p class="eyebrow">About me</p><h2>Business-minded. Technology-driven.</h2></div>
+        <div>
+          <p>I bring together a strong technical foundation and a strategic understanding of how information systems enable business success. My background spans higher education, academic leadership, project management and IT, with a focus on analysing complex problems and delivering practical, data-driven solutions.</p>
+          <p>I enjoy working with diverse stakeholders, improving processes and bridging the gap between business needs and technology. I am particularly interested in opportunities where I can contribute as a Business Analyst, Project Manager or Information Systems Professional.</p>
+        </div>
+      </div>
+    </section>
 
-<hr>
-  <h3>My Hobbies</h3>
-  <ol>
-    <li>Playing Badminton</li>
-    <li>Snorkling</li>
-    <li>Playing Mobile Legends</li>
-  </ol>
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <p class="eyebrow">Experience</p>
+        <h2>A career built around technology and delivery.</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">May 2020 — Present</div>
+            <div><h3>IT Specialist</h3><p class="company">FOCUSED.com · Canada</p><ul><li>Coordinate website implementation projects, managing tasks, timelines and deliverables with designers, developers and stakeholders.</li><li>Resolve technical issues and improve user experience through system analysis, troubleshooting and process improvement.</li><li>Implement system enhancements, manage DNS and domain configurations, and maintain technical documentation.</li></ul></div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">Aug 2022 — Jan 2025</div>
+            <div><h3>Assistant Professor III | Capstone Coordinator</h3><p class="company">Tagoloan Community College · Philippines</p><ul><li>Led end-to-end technology projects from requirements gathering through deployment.</li><li>Worked with stakeholders to define business needs and deliver community-focused information systems.</li><li>Mentored project teams in business analysis, system design, documentation and solution validation.</li></ul></div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">Jun 2020 — Aug 2021</div>
+            <div><h3>Dean, College of Computer Studies</h3><p class="company">Southern Philippines College · Philippines</p><ul><li>Directed strategic planning and digital transformation initiatives.</li><li>Led cross-functional teams in technology integration, process optimisation and governance improvements.</li><li>Managed budgets, resources and stakeholder engagement to support organisational goals.</li></ul></div>
+          </article>
+          <article class="timeline-item compact">
+            <div class="timeline-date">2015 — 2022</div>
+            <div><h3>Academic & Information Technology Roles</h3><p class="company">Southern Philippines College · Tagoloan Community College · Lourdes College</p><p>Delivered instruction in software development, databases, networking and systems analysis while guiding requirements analysis, solution design and project implementation.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<hr>
+    <section id="skills" class="section">
+      <div class="container">
+        <p class="eyebrow">Capabilities</p><h2>Where I add value.</h2>
+        <div class="skill-grid">
+          <article><h3>Business & Systems Analysis</h3><p>Requirements gathering, stakeholder management, UML/BPMN modelling and translating business needs into technology solutions.</p></article>
+          <article><h3>Project Delivery</h3><p>Project coordination, task and timeline management, cross-functional collaboration and documentation.</p></article>
+          <article><h3>Data & Technology</h3><p>Power BI, SQL, Python, systems and software understanding, troubleshooting and technology implementation.</p></article>
+          <article><h3>Transformation & Improvement</h3><p>Process improvement, digital transformation, technology integration and practical solution design.</p></article>
+        </div>
+      </div>
+    </section>
 
-<h3><a href="contact.html">Contact Me</a></h3>
+    <section id="education" class="section section-alt">
+      <div class="container"><p class="eyebrow">Education</p><h2>Continuous learning and professional growth.</h2>
+        <div class="education-grid">
+          <article><span>2025 — 2026</span><h3>Master of Management Information Systems</h3><p>Edith Cowan University · Business and Technology</p></article>
+          <article><span>2015 — 2019</span><h3>Master in Information Technology</h3><p>Xavier University – Ateneo de Cagayan</p></article>
+          <article><span>2020</span><h3>Data Science</h3><p>Development Academy of the Philippines</p></article>
+          <article><span>2010 — 2014</span><h3>Bachelor of Science in Information Technology</h3><p>Mindanao University of Science and Technology</p></article>
+        </div>
+      </div>
+    </section>
 
-<hr>
+    <section id="achievements" class="section">
+      <div class="container achievement-grid">
+        <div><p class="eyebrow">Recognition</p><h2>Always looking for the next challenge.</h2></div>
+        <article class="achievement-card"><span class="award-number">02</span><div><h3>2nd Place — WA Students Doing Good Challenge 2025</h3><p>Certificate of Achievement for the WA Students Doing Good (SDG) Challenge.</p></div></article>
+        <div class="cert-list"><p><strong>Certifications</strong></p><span>Foundations of Project Management</span><span>Ethics in the Age of Generative AI</span><span>Getting Grounded on Analytics</span></div>
+      </div>
+    </section>
 
-<h3>My Skills</h3>
-<table cellspacing="10";>
-  <tr>
-    <td>Mobile Development</td>
-    <td>⭐⭐⭐⭐⭐</td>
-  </tr>
-  <tr>
-    <td>Project Management</td>
-    <td>⭐⭐⭐</td>
-  </tr>
+    <section class="cta-section">
+      <div class="container cta"><div><p class="eyebrow">Let's connect</p><h2>Have a project, opportunity or idea to discuss?</h2></div><a class="button primary light" href="contact.html">Get in touch</a></div>
+    </section>
+  </main>
 
-</table>
-
-
+  <footer><div class="container footer-content"><p>© <span id="year"></span> Vincent Janu Razalo</p><a href="https://www.linkedin.com/in/vincentjanurazalo/" target="_blank" rel="noopener">LinkedIn ↗</a></div></footer>
+  <script src="script.js"></script>
 </body>
-
 </html>
